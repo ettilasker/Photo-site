@@ -1,0 +1,237 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+  overflow-x: hidden;
+}
+#logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 120px));
+  justify-content: center;
+  column-gap: 20px;
+}
+.nav {
+  text-align: center;
+  margin: 1.5%;
+  padding: 030px;
+  display: flex;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 120px));
+  justify-content: center;
+  column-gap: 80px;
+  row-gap: 5px;
+}
+.bars {
+  text-decoration: none;
+  color: black;
+}
+#under_line{
+  border-bottom: 2px solid rgb(199, 94, 94);
+  padding: 2px;
+  }
+/* .nav2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 120px));
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.bars2 {
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px;
+
+} */
+.big-image-home {
+width: 100vw;
+height: 100%;
+margin: 0 0 0 0 ;
+}
+div.big-image-home {
+  width: 100vw;
+  height: 70vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: home 20s linear infinite;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+@keyframes home {
+  0% {
+    background-image: url("../pictures/homepic1.jpg")
+  }
+  20% {
+    background-image: url("../pictures/homepic1.jpg")
+  }
+  30% {
+    background-image: url("../pictures/homepic2.jpg");
+  }
+  50% {
+    background-image: url("../pictures/homepic2.jpg");
+  }
+  60% {
+    background-image: url("../pictures/hopepic3.jpg");
+  }
+  80% {
+    background-image: url("../pictures/hopepic3.jpg");
+  }
+  90% {
+    background-image: url("../pictures/hopepic4.jpg");
+  }
+  100% {
+    background-image: url("../pictures/hopepic4.jpg");
+  }
+
+}
+#pictures_gallery_home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.responsive_gallery_home {
+  padding: 0 6px;
+  float: left;
+  margin: 12px;
+  width:22%;
+  
+ }
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.text_gallery {
+  padding: 15px;
+  text-align: center;
+  background-color:  rgb(199, 94, 94);
+  text-decoration:none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.photos{
+  text-decoration: none;
+}
+.photos:hover{
+  opacity: 0.5;
+}
+#client_login {
+  text-align: center;
+  margin: 30px 30px;
+  padding: 30px 30px;
+  margin-top: 6%;
+}
+#login_label {
+  padding: 5px 5px;
+  margin-top: 8%;
+}
+ #footer_icons{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 4%;
+  margin-top: 1%;
+}
+#text_icons{
+  margin-right: 5%;
+  margin-left: 2%;
+}   
+#footer {
+  border: 10px solid rgb(8, 8, 8);
+  text-align: center;
+  padding: 7px;
+  font-family: serif;
+  color: aliceblue;
+  background-color: black;
+  margin-bottom: 0px;
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .nav{
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, 50px);
+    }
+    #under_line{
+      padding: 0.5px;
+      height: 20px;
+    }
+    div.big-image-home{
+    margin-bottom: 2px;
+
+  }
+  .big-image-home {
+    align-items: center;
+  }
+    .responsive_gallery_home {
+    width: 50%;
+    margin: 6px 0;
+  }
+  #footer_icons{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 15px;
+   }
+   .iconlink{
+    width: 20px;
+   }
+}
+@media only screen and (max-width: 600px) {
+  .nav{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 50px);
+}
+#under_line{
+  padding: 0.5px;
+  height: 20px;
+}
+div.big-image-home {
+  width: 100vw;
+  height: 400px;
+}
+.responsive_gallery_home {
+    width: 50%;
+  }
+ 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+#footer_icons{
+  font-size: 15px;
+ }
+ #text_icons{
+  margin-right: 1%;
+  margin-left: 1%;
+}
+ .iconlink{
+  width: 15px;
+ }
+} 
+
