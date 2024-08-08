@@ -1,6 +1,6 @@
-# Photographer Portfolio Website
+# Photo-site
 
-Welcome to my first project in my studies!# 
+Welcome to my first project in my studies!
 This project is a responsive website developed for a client, who is a professional photographer. The site showcases her work, offers users the ability to order photography packages, and highlights her stunning portfolio.
 
 ## Key Features
